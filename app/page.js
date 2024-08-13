@@ -2,112 +2,144 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">app/page.js</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
+    <div>
+      <section
+        className="min-h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ background: "linear-gradient(black, black,#709cf3)" }}
+      >
+        <div className="text-center text-white">
+          <h1 className="text-6xl font-bold mb-4">TechSweet</h1>
+          <p className="text-2xl mb-6">Innovating for a better future.</p>
+        </div>
+      </section>
+
+      <section
+        className="min-h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ background: "linear-gradient(#709cf3, #bea5cf)" }}
+      >
+        <div className="text-center text-white p-8">
+          <h2 className="text-6xl font-bold mb-4">Our Priorities</h2>
+          <br />
+          <br />
+          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            <div className="bg-gray-800 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold  mb-4">The Customer</h3>
+              <p className=" mt-2">
+                We prioritize our customers’ feedback and take pride in letting
+                it guide the features of our products.
+              </p>
+            </div>
+            <div className="bg-gray-800 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold  mb-4">Security</h3>
+              <p className=" mt-2">
+                We go above and beyond to make sure that our customers can
+                always feel safe when using our products.
+              </p>
+            </div>
+            <div className="bg-gray-800 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold  mb-4">Positivity</h3>
+              <p className=" mt-2">
+                TechSweet seeks to deliver products that enhance others’ lives
+                and allow them to strengthen relationships within their
+                communities.
+              </p>
+            </div>
+            <div className="bg-gray-800 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold  mb-4">Humanity</h3>
+              <p className=" mt-2">
+                We vow to keep the human side of business at the forefront of
+                our culture as we grow over the long term.
+              </p>
+            </div>
+            <div className="bg-gray-800 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold  mb-4">Simplicity</h3>
+              <p className=" mt-2">
+                We keep our products simple and usable, even as our projects
+                grow in complexity.
+              </p>
+            </div>
+            <div className="bg-gray-800 p-8 rounded-lg">
+              <h3 className="text-3xl font-bold  mb-4">Responsiveness</h3>
+              <p className=" mt-2">
+                We maintain a close distance to our customers and are easy to
+                reach at all times.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="min-h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ background: "linear-gradient(#bea5cf,#DBDBDB )" }}
+      >
+        <div className="text-center text-white p-8">
+          <h2 className="text-6xl font-bold mb-4">Our Work</h2>
+          <br />
+          <br />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+            <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center">
+              <Image
+                src={"/logo-kontact.png"}
+                alt="Kontact logo"
+                width={100}
+                height={100}
+              />
+              <h3 className="text-3xl font-bold mt-4">Kontact</h3>
+              <p className="text-xl mt-2">The Ultimate Contacts App</p>
+              <p className="mt-2 stone-300" style={{ color: "#cfcfcf" }}>
+                Send mass texts effortlessly, sort your contacts by date added,
+                and create contact groups for better organization and peace of
+                mind.
+              </p>
+              <a
+                href="/kontact"
+                className="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+              >
+                See More
+              </a>
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center">
+              <Image
+                src={"/logo-codercomplete.png"}
+                alt="CoderComplete logo"
+                width={77}
+                height={77}
+              />
+              <h3 className="text-3xl font-bold mt-4">CoderComplete</h3>
+              <p className="text-xl mt-2">World-Class Coding Education</p>
+              <p className="mt-2 stone-300" style={{ color: "#cfcfcf" }}>
+                Receive 1-on-1 support throughout a streamlined learning
+                approach to getting your first coding job.
+              </p>
+              <a
+                href="https://www.codercomplete.com"
+                className="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+                target="_blank"
+              >
+                See More
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        className="min-h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ background: "linear-gradient( #DBDBDB, black)" }}
+      >
+        <div className="text-center text-white p-8">
+          <h2 className="text-6xl font-bold mb-4">Let&#39;s Work Together</h2>
+          <p className="text-xl">
+            We are interested in partnering with others equally adamant about
+            innovating for a better world.
+          </p>
+          <br />
+          <a href="/contact" className="btn">
+            Contact Us
           </a>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800 hover:dark:bg-opacity-30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      </section>
+    </div>
   );
 }

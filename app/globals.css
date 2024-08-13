@@ -1,11 +1,11 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --foreground-rgb: 255, 255, 255; /* White text */
+  --background-start-rgb: 0, 0, 0; /* Black background */
+  --background-end-rgb: 0, 0, 0; /* Black background */
 }
 
 @media (prefers-color-scheme: dark) {
@@ -18,16 +18,60 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(var(--background-start-rgb));
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .btn-download {
+    background-color: white;
+    color: black;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+  }
+
+  .header {
+    /* display: flex;
+    justify-content: space-between;
+    align-items: center; */
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+  }
+
+  .nav-links a {
+    margin-left: 1rem;
+    color: white;
+    /* text-decoration: none; */
+  }
+
+  .nav-links a:hover {
+    text-decoration: underline;
+  }
+
+  .active {
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .sticky-header {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1000; /* Adjust as needed */
+    background-color: white; /* Adjust as needed */
+  }
+
+  .gradient-text {
+    background: linear-gradient(to right, #efa400, white);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 }
