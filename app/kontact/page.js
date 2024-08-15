@@ -52,7 +52,7 @@ export default function Kontact() {
         // style={{ background: "linear-gradient(  #f0c175,#E4E4E4)" }}
         style={{ background: "linear-gradient(  #f0c175,#2844AD, #202C59)" }}
       >
-        <h1 className="text-5xl font-bold mb-20">A Better Contacts App</h1>
+        <h1 className="text-5xl font-bold mb-10">A Better Contacts App</h1>
         <div className="flex flex-col-reverse md:grid lg:grid grid-cols-2 grid-cols-2 gap-10">
           <div className="flex justify-center">
             <VideoPlayer featureNumber={1} />
@@ -64,7 +64,8 @@ export default function Kontact() {
             <br />
             <p className="text-lg">
               Sort your contacts by date added. Filter your contact list with
-              contact groups. Connect to your WhatsApp chat with a contact.
+              contact groups. Connect directly to WhatsApp conversations with
+              your contacts.
             </p>
           </div>
         </div>
@@ -83,8 +84,8 @@ export default function Kontact() {
             <br />
             <p className="text-lg">
               Texting multiple people has never been so easy. Save yourself
-              hours of tedious copying and pasting. Improve your ability to
-              connect with others.
+              hours of tedious copying and pasting. Improve your outreach
+              efficiency and ability to connect with others.
             </p>
           </div>
           <div className="flex justify-center">
@@ -130,9 +131,8 @@ export default function Kontact() {
             <h3 className="text-3xl font-bold mb-4">Pre-Write Your Messages</h3>
             <br />
             <p className="text-lg">
-              Store Templates you frequently use or want to use in the future.
-              These Templates can be accessed easily when creating a message.
-              Auto-fill contact info.
+              Store frequently used message templates for quick access.
+              Auto-fill contact details for a personalized touch.
             </p>
           </div>
           <div className="flex justify-center">
