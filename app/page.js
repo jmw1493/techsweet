@@ -79,12 +79,35 @@ export default function Home() {
           <br />
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center">
-              <Image
-                src={"/logo-kontact.png"}
-                alt="Kontact logo"
-                width={100}
-                height={100}
-              />
+              <div className="logo">
+                <Image
+                  src={"/logo-equ8.png"}
+                  alt="equ8 logo"
+                  width={100}
+                  height={100}
+                />
+              </div>
+              <h3 className="text-3xl font-bold mt-4">equ8</h3>
+              <p className="text-xl mt-2">The Best Daily Math Puzzle Game</p>
+              <p className="mt-2 stone-300" style={{ color: "#cfcfcf" }}>
+                Create equations. Earn points. Level up!
+              </p>
+              <a
+                href="/equ8"
+                className="inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-lg"
+              >
+                See More
+              </a>
+            </div>
+            <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center">
+              <div className="logo">
+                <Image
+                  src={"/logo-kontact.png"}
+                  alt="Kontact logo"
+                  width={100}
+                  height={100}
+                />
+              </div>
               <h3 className="text-3xl font-bold mt-4">Kontact</h3>
               <p className="text-xl mt-2">The Ultimate Contacts App</p>
               <p className="mt-2 stone-300" style={{ color: "#cfcfcf" }}>
@@ -100,12 +123,14 @@ export default function Home() {
               </a>
             </div>
             <div className="bg-gray-800 p-4 rounded-lg flex flex-col items-center justify-center">
-              <Image
-                src={"/logo-codercomplete.png"}
-                alt="CoderComplete logo"
-                width={77}
-                height={77}
-              />
+              <div className="logo">
+                <Image
+                  src={"/logo-codercomplete.png"}
+                  alt="CoderComplete logo"
+                  width={77}
+                  height={77}
+                />
+              </div>
               <h3 className="text-3xl font-bold mt-4">CoderComplete</h3>
               <p className="text-xl mt-2">World-Class Coding Education</p>
               <p className="mt-2 stone-300" style={{ color: "#cfcfcf" }}>

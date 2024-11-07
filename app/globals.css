@@ -47,7 +47,7 @@ body {
 
   .nav-links a {
     margin-left: 1rem;
-    color: white;
+    /* color: white; */
     /* text-decoration: none; */
   }
 
@@ -73,5 +73,35 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+  }
+
+  .gradient-text-equ8 {
+    background: linear-gradient(to right, #673ab7, #673ab7);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }
+
+  .equ8-background {
+    background-image: url("/equ8/bg.png"); /* Specify the path to your image */
+    background-repeat: repeat; /* Repeat the image in both directions */
+    background-size: auto; /* Default size for a seamless pattern, adjust if needed */
+  }
+
+  .equ8-background-gray {
+    background-image: url("/equ8/bg-gray.png"); /* Specify the path to your image */
+    background-repeat: repeat; /* Repeat the image in both directions */
+    background-size: auto; /* Default size for a seamless pattern, adjust if needed */
+  }
+
+  .equ8-background-purple {
+    background-image: url("/equ8/bg-purple.png"); /* Specify the path to your image */
+    background-repeat: repeat; /* Repeat the image in both directions */
+    background-size: auto; /* Default size for a seamless pattern, adjust if needed */
+  }
+
+  .logo {
+    border-radius: 10px;
+    overflow: hidden;
   }
 }

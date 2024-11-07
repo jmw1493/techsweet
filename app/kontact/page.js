@@ -37,7 +37,7 @@ export default function Kontact() {
           </div>
           <div className="flex-1 flex items-center justify-center">
             <Image
-              src="/first-photo.png"
+              src="/kontact/first-photo.png"
               alt="Kontact screenshot"
               width={600}
               height={800}

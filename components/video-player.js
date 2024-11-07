@@ -19,7 +19,10 @@ const VideoPlayer = ({ featureNumber }) => {
           }}
           style={{ width: "auto", height: "95%" }}
         >
-          <source src={`feature-${featureNumber}.mp4`} type={"video/mp4"} />
+          <source
+            src={`kontact/feature-${featureNumber}.mp4`}
+            type={"video/mp4"}
+          />
           Your browser does not support the video tag.
         </video>
       </div>
